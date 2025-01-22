@@ -1,0 +1,279 @@
+
+html body{
+    margin-left:auto;
+    margin-right:auto;
+    background-color: darkviolet;
+    color: rgb(49, 49, 49);
+    overflow-x: hidden;
+    
+ }
+
+ @keyframes fizyczne {
+    0%{background-color: red;}
+    25%{background-color: blueviolet;}
+    50%{background-color: aqua;}
+    100%{background-color: blue;}
+}
+
+header{
+    animation-name: fizyczne;
+    animation-duration: 3s;
+    position: sticky;
+    top:0vh;
+    
+    margin-top: -10px;
+    width: 100%;
+    height: 50px;
+
+    box-sizing: border-box;
+    padding-top: 10px;
+
+    background-color: 	rgb(128, 0, 255);
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    font-size: 25px;
+
+    border-bottom: 1px solid;
+}
+nav{
+    overflow-y: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 40px;
+    
+    margin-top: 2px;
+    
+    border-top: 1px solid;
+
+    background-color: rgb(128, 0, 255);
+    font-family: monospace;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding-top:2.5px;
+    font-size: 20px;
+}
+nav a{
+    border: 1px solid;
+    padding: 1px;
+    color: white;
+}
+nav a:hover{
+    background-color: darkmagenta;
+}
+.gallery_header{
+    margin-top: 10px;
+    width: 95%;
+    height: 65px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: 	rgb(128, 0, 255);
+    color: rgb(10, 0, 41);
+    font-family: monospace;
+    text-align: center;
+    font-size: 25px;
+
+    border: 1px solid;
+}
+
+.gallery_i_frame{
+    display: block;
+    
+    text-align: center;
+
+    padding-left: 0;
+
+    margin-top: 5px;
+    width: 320px;
+    height: 180px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border:1px solid;
+
+}
+.gallery_links{
+    
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 2px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery_links a{
+    display: block;
+    width: 315px;
+    height: 20px;
+    color:inherit;
+    text-decoration: none;
+    border:1px solid;
+    padding:1px;
+    color:rgb(39, 39, 39);
+}
+
+.gallery_links a:hover {
+   background-color: darkmagenta;
+}
+
+.article_links{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    width: 95%;
+   margin-bottom: 30px;
+}
+
+.article_links a{
+    margin-right: 2px;
+    color:inherit;
+    text-decoration: none; 
+    border:1px solid;
+    padding:1px;
+    color:rgb(39, 39, 39);
+    float: right;
+}
+
+.article_links a:hover {
+   background-color: darkmagenta;
+}
+
+article{
+    width: 95%;
+    min-height: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(39, 39, 39);
+    border:1px solid;
+}
+
+footer{
+    width: 100%;
+    margin-top: 15px;
+
+    background-color: 	rgb(128, 0, 255);
+    color: snow;
+    font-family: monospace;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+}
+
+@media only screen and (min-width:600px) {
+    .gallery_i_frame{
+        width: 480px;
+        height: 270px;
+    }
+    .gallery_links{
+        
+        width: 480px;
+        font-size: 17px;
+       
+        
+    }
+    .gallery_links a {
+        width: 475px;
+        
+    }
+    article{
+        min-height: 200px;
+        font-size: 20px;
+        
+         
+     }
+     .gallery_header{
+         padding-top: 7px;
+         height: 40px;
+         font-size: 27px;
+         
+         
+     }
+     .article_links a{
+        
+         font-size: 17px;
+         float: none;
+        
+     }
+     footer {
+        margin-bottom: 40px;
+     }
+     nav {
+        position: fixed;
+        bottom: 0%;
+
+     }
+}
+@media only screen and (min-width:1200px) {
+    header{
+       padding-left: 200px;
+    }
+    nav{
+        position:fixed;
+        width: 200px;
+        height: 100%;
+        white-space:wrap;
+        border-right: 1px solid;
+        top:48px;
+    }
+    nav a{
+        display: block;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .gallery_i_frame{
+        margin-left: 210px;
+        width: 960px;
+        height: 540px;
+    }
+    .gallery_links{
+        width:960px;
+        font-size: 20px;
+        margin-left: 210px;
+    }
+    .gallery_links a {
+        width: 956px;
+        overflow: hidden;
+    }
+    article{
+        width: 80%;
+        margin-left: 210px;
+        min-height: 200px;
+        font-size: 20px;
+        
+    }
+    .gallery_header{
+        width: 80%;
+        margin-left: 210px;
+        padding-top: 7.5px;
+        height: 45px;
+        font-size: 30px;
+        
+        
+    }
+    .article_links a{
+        font-size: 20px;
+    }
+    .article_links{
+        margin-left: 210px;
+    }
+    footer{
+        
+        bottom: 0;
+        margin-bottom: -10px;
+    }
+
+}
+form { 
+    color: rgb(46, 46, 46);
+    font-size: 20px;
+    margin: 0 auto; 
+    height: 100%;
+    width:250px;
+    }
+
+  
